@@ -63,4 +63,7 @@ if(userGuess === randomNumber) {
     }
 }
 
+5. El juego actualmente permite que el usuario continue ingresando valores despues de 10 intentos
+Para solucionar esto se debe desactivar el campo de entrada de texto y el botón de envío despues de que se alcancen los 10 intentos o si el usuario adivina el número.
 
+Por último, hay algunos errores en el código actual que deben ser corregidos para que el juego funcione correctamente. Por ejemplo, en la línea 32, falta un punto antes de "lowOrHi", lo que hace que el programa no encuentre el elemento correspondiente en el documento HTML. Además, en la línea 51, "addeventListener" debe ser reemplazado por "addEventListener"
