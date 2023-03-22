@@ -48,11 +48,13 @@ guessSubmit.addEventListener('click', checkGuess);
 
 function checkGuess() {
   let userGuess = parseInt(guessField.value);
-  if (Number.isNaN(userGuess)) {
-    alert('Ingrese un número entero válido');
+  if (!Number.isInteger(userGuess) || userGuess < 0 || userGuess > 100) {
+    alert('Ingrese un número entero válido entre 0 y 100');
     return;
   }
   guessCount++;
+  // resto del código aquí
+}
   if (guessCount === 1) {
     guesses.textContent = 'Números anteriores: ';
   }
